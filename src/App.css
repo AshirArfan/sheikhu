@@ -1,38 +1,47 @@
 .App {
-  text-align: center;
+  font-family: 'Arial', sans-serif; /* Use a modern font */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes full height */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: linear-gradient( #e0f7f8); /* Matching gradient */
+  padding: 40px;
+  color: rgb(38, 42, 53);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
-.App-link {
-  color: #61dafb;
+.app-logo {
+  width: 120px; /* Increased logo size for visibility */
+  height: auto;
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app-title {
+  font-size: 3rem; /* Larger title for emphasis */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.app-subtitle {
+  font-size: 1.5rem; /* Subtitle size */
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 20px; /* Space below subtitle */
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 768px) {
+  .app-title {
+      font-size: 2.5rem; /* Adjust title for smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+  .app-subtitle {
+      font-size: 1.2rem; /* Adjust subtitle for smaller screens */
   }
 }

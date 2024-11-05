@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Reduced height */
+    background: linear-gradient(90deg, #e0f7f8, #33a7a7); /* Matching gradient */
+    position: relative; /* Enable positioning of the oval shapes */
+}
+
+/* Styles for the oval shapes */
+.oval {
+    display: inline-block;
+    background: #33a7a7; /* Color for the ovals */
+    color: white; /* Text color */
+    border-radius: 25px; /* Oval shape */
+    padding: 10px 20px; /* Padding for spacing */
+    margin: 0 10px; /* Margin between ovals */
+    font-weight: bold; /* Bold text */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.oval:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    color: #000000; /* Matching color */
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #006666; /* Matching color */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff6f61; /* Hover color */
+}
+
+/* Synchronizing Body and Footer colors as well */
+.body {
+    background: linear-gradient(90deg, #e0f7f8, #33a7a7); /* Matching gradient */
+    /* Other styles for body remain unchanged */
+}
+
+.footer {
+    background: linear-gradient(90deg, #e0f7f8, #33a7a7); /* Matching gradient */
+    /* Other styles for footer remain unchanged */
+}
+.header-divider {
+    height: 2px; /* Height of the divider line */
+    background-color: black; /* Color of the line */
+    width: 100%; /* Full width */
+}

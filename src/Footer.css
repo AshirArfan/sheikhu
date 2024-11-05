@@ -1,0 +1,41 @@
+/* Footer Styles */
+.footer {
+    background: linear-gradient(90deg, #e0f7f8, #33a7a7); /* Matching gradient */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    font-size: 1.2rem;
+    color: black; /* Changed to white for contrast */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black; /* Changed to white for contrast */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ff6f61; /* Hover color matching the header */
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    color: #555555; /* Maintain readability */
+}
